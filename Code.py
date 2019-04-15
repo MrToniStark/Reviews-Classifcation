@@ -1,7 +1,7 @@
 #Reading Input
 import pandas as pd
-df1 = pd.read_csv('Round1_Problem1-of-2_Dataset_amazon_cells_labelled.txt', delimiter = '\t',header = None)
-df2 = pd.read_csv('Round1_Problem1-of-2_Dataset_imdb_labelled.txt', delimiter = '\t',header = None)
+df1 = pd.read_csv('Dataset_amazon_cells_labelled.txt', delimiter = '\t',header = None)
+df2 = pd.read_csv('Dataset_imdb_labelled.txt', delimiter = '\t',header = None)
 df1.columns = ['Text', 'Sentiments']
 df2.columns = ['Text', 'Sentiments']
 df = pd.concat([df1, df2], ignore_index=True)
